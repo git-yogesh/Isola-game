@@ -1,14 +1,12 @@
 package com.algosee.prerk.isola;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -43,7 +41,7 @@ public class game extends ActionBarActivity {
         mDrawerList.setLayoutManager(new LinearLayoutManager(this));
 
         // set up the drawer's list view with items and click listener
-        mDrawerList.setAdapter(new NavDrawerAdapter(mOptions, this));
+        mDrawerList.setAdapter(new NavDrawerAdapter(mOptions));
         // enable ActionBar app icon to behave as action to toggle nav drawer
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -114,12 +112,14 @@ public class game extends ActionBarActivity {
 
         switch (position) {
             case 0:
+                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                 //fragment = new FilterFragment();
                 //ft.replace(R.id.content_frame, fragment);
                 //ft.commit();
                 break;
 
             case 1:
+                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                 /*if(Splash.SUPER_FLAG == 0) {
                     fragment = new myAccount();
                     ft.replace(R.id.content_frame, fragment);
@@ -133,6 +133,7 @@ public class game extends ActionBarActivity {
                 break;
 
             case 2:
+                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                 /*if(Splash.SUPER_FLAG == 0) {
                     fragment = new my_copies();
                     ft.replace(R.id.content_frame, fragment);
@@ -147,6 +148,7 @@ public class game extends ActionBarActivity {
                 break;
 
             case 3:
+                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                 /*if(Splash.SUPER_FLAG == 0) {
                     Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                     SharedPreferences credentialsSharedPref = getSharedPreferences(Login.PREFS_NAME, MODE_PRIVATE);

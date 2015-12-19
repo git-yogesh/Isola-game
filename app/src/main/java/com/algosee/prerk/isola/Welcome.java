@@ -18,7 +18,7 @@ public class Welcome extends ActionBarActivity {
     }
 
     public void start(View view){
-        Intent startgame = new Intent(getApplicationContext(),Welcome.class);
+        Intent startgame = new Intent(getApplicationContext(),game.class);
         startActivity(startgame);
         finish();
         Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();

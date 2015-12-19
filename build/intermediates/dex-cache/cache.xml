@@ -16,6 +16,13 @@
         <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-5fd43b7144bc5a094de3c4c2872ad91814bf2c3a.jar" />
     </item>
     <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-9bf25e91267a306f525ab303431d91d2489dfb4b.jar" />
+    </item>
+    <item
         jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\libs\internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -23,11 +30,11 @@
         <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-6e5966cab2b2ecf5adff09b487a82b765061d834.jar" />
     </item>
     <item
-        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\classes.jar"
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-9bf25e91267a306f525ab303431d91d2489dfb4b.jar" />
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-850e2c14554589af61a898c88bc03d14b7f1a8bd.jar" />
     </item>
 
 </items>
