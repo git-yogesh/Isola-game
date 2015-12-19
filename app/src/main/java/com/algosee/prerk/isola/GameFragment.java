@@ -134,6 +134,7 @@ public class GameFragment extends Fragment {
             }
             else{
                 display();
+                Toast.makeText(getContext(),check_flag+"",Toast.LENGTH_SHORT).show();
                 if( check_flag == 1){
                     Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
                 }

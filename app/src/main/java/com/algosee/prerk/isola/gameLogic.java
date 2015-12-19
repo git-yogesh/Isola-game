@@ -126,23 +126,48 @@ public class gameLogic {
         grid[newBlockX][newBlockY] = -1;
     }
 
-    public boolean isWinner(){
-
-
-        int opp = getCurPlayer();
-        if(opp==1)
-            opp = 2;
-        else opp =1;
+    public int getWinner(){
 
         int i,j;
+        int f = 1;
         for(i=-1;i<2;i++){
             for(j=-1;j<2;j++){
-                if(grid[newMoveX+i][newMoveY+j] == 0)
-                    return false;
+                try{
+                    if(grid[p1PosX+i][p1PosY+j] == 0){
+                        f = 0;
+                        break;
+                    }
+
+                }catch(ArrayIndexOutOfBoundsException e){
+
+                }
             }
         }
 
-        return true;
+        if(f != 0){
+            return 2;
+        }
+
+        f = 1;
+
+        for(i=-1;i<2;i++){
+            for(j=-1;j<2;j++){
+                try{
+                    if(grid[p2PosX+i][p2PosY+j] == 0){
+                        f = 0;
+                        break;
+                    }
+
+                }catch(ArrayIndexOutOfBoundsException e){
+
+                }
+            }
+        }
+        if(f != 0){
+            return 1;
+        }
+
+        return 0;
 
     }
 
@@ -165,6 +190,7 @@ public class gameLogic {
 
         newBlockX = a;
         newBlockY = b;
+        int w;
 
         if(!isBlockValid()){
             statusCode = -2;
@@ -172,11 +198,14 @@ public class gameLogic {
 
         else{
             updateGridBlock();
-            if(isWinner()){
-                statusCode = getCurPlayer();
+            w = getWinner();
+            if(w != 0 ){
+                statusCode = w;
             }
-            togglePlayer();
-            statusCode = 0;
+            else{
+                togglePlayer();
+                statusCode = 0;
+            }
         }
         return statusCode;
     }
