@@ -30,10 +30,10 @@ public class NavDrawerAdapter extends RecyclerView.Adapter<NavDrawerAdapter.View
     private String[] mDataset;
     private OnItemClickListener mListener;
 
-    public NavDrawerAdapter(String[] myDataset) {
+    public NavDrawerAdapter(String[] myDataset,OnItemClickListener listener) {
 
         mDataset = myDataset;
-        //mListener = listener;
+        mListener = listener;
     }
 
     @Override

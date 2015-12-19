@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class game extends ActionBarActivity {
+public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemClickListener{
 
     private DrawerLayout mDrawerLayout;
     private RecyclerView mDrawerList;
@@ -41,7 +41,7 @@ public class game extends ActionBarActivity {
         mDrawerList.setLayoutManager(new LinearLayoutManager(this));
 
         // set up the drawer's list view with items and click listener
-        mDrawerList.setAdapter(new NavDrawerAdapter(mOptions));
+        mDrawerList.setAdapter(new NavDrawerAdapter(mOptions,this));
         // enable ActionBar app icon to behave as action to toggle nav drawer
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -112,14 +112,14 @@ public class game extends ActionBarActivity {
 
         switch (position) {
             case 0:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Logout1", Toast.LENGTH_SHORT).show();
                 //fragment = new FilterFragment();
                 //ft.replace(R.id.content_frame, fragment);
                 //ft.commit();
                 break;
 
             case 1:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Logout2", Toast.LENGTH_SHORT).show();
                 /*if(Splash.SUPER_FLAG == 0) {
                     fragment = new myAccount();
                     ft.replace(R.id.content_frame, fragment);
@@ -133,7 +133,7 @@ public class game extends ActionBarActivity {
                 break;
 
             case 2:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Logout3", Toast.LENGTH_SHORT).show();
                 /*if(Splash.SUPER_FLAG == 0) {
                     fragment = new my_copies();
                     ft.replace(R.id.content_frame, fragment);
@@ -148,7 +148,7 @@ public class game extends ActionBarActivity {
                 break;
 
             case 3:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Logout4", Toast.LENGTH_SHORT).show();
                 /*if(Splash.SUPER_FLAG == 0) {
                     Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
                     SharedPreferences credentialsSharedPref = getSharedPreferences(Login.PREFS_NAME, MODE_PRIVATE);
@@ -168,7 +168,7 @@ public class game extends ActionBarActivity {
                 break;
 
             case 4:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_SHORT).show();
                 /*SharedPreferences credentialsSharedPref = getSharedPreferences(Login.PREFS_NAME, MODE_PRIVATE);
                 SharedPreferences.Editor credentialsEditor = credentialsSharedPref.edit();
                 credentialsEditor.clear();
