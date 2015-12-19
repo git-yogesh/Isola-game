@@ -8,18 +8,36 @@ import android.view.MenuItem;
 import android.view.View;
 
 
+
 public class Welcome extends ActionBarActivity {
+
+    public static int PlayerFlag = 0;
+
+    //String key = "848bd69a3169a138522c20e22d97c2b6bcbae01a";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+
     }
 
     public void start(View view){
+        PlayerFlag = 2;
         Intent startgame = new Intent(getApplicationContext(),game.class);
         startActivity(startgame);
         finish();
+
+        //Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
+    }
+
+    public void start_one(View view){
+        PlayerFlag = 1;
+        Intent startgame = new Intent(getApplicationContext(),game.class);
+        startActivity(startgame);
+        finish();
+
         //Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
     }
 

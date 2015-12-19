@@ -27,10 +27,19 @@ public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemCl
     private String[] mOptions;
     private Fragment fragment;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
+        //PerkManager.startSession(getApplicationContext(), key);
+
+
+
+        //PerkManager.startSession(getApplicationContext(), key, localPerkListener);
+
 
         mTitle = mDrawerTitle = getTitle();
         mOptions = getResources().getStringArray(R.array.options_array);
@@ -113,9 +122,16 @@ public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemCl
         switch (position) {
             case 0:
                 //Toast.makeText(getApplicationContext(), "Logout1", Toast.LENGTH_SHORT).show();
-                fragment = new GameFragment();
-                ft.replace(R.id.content_frame, fragment);
-                ft.commit();
+
+                if(Welcome.PlayerFlag == 1){
+                    fragment = new SingleGame();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }else if(Welcome.PlayerFlag == 2) {
+                    fragment = new GameFragment();
+                    ft.replace(R.id.content_frame, fragment);
+                    ft.commit();
+                }
                 break;
 
             case 1:
@@ -130,12 +146,12 @@ public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemCl
                 break;
 
             case 3:
-                //Toast.makeText(getApplicationContext(), "Logout4", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"sd",Toast.LENGTH_SHORT).show();
 
+                //PerkManager.showPortal(, key);
                 break;
 
             case 4:
-                //Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_SHORT).show();
 
                 break;
         }

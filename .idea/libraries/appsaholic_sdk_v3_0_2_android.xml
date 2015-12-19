@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="appsaholic-sdk-v3.0.2-android">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/appsaholic-sdk-v3.0.2-android.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

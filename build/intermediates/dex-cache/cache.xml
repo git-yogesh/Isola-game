@@ -2,11 +2,60 @@
 <items version="2" >
 
     <item
-        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\classes.jar"
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.1.0\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-cacc25a68549bdf31fcd29d6060c7e9491c31571.jar" />
+        sha1="d294caf562c4c678b2ef351662a0ca6f1a4d06c0">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-014269a932bb8146d1fc3c48482f1999db10e8d6.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-a310c701873bddd243f823b57811fbac944ab740.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="993834cb17d07d51b92db89d2c330243592ebf77">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-98f46f993c15ded2898760adaecd42a144c2241b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="17449c47df35c754b257532052f1270c444f7993">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-4f57b50fd41dc1744fa6819a90ae864bb4a89f10.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="041d93cf0533591c29d1d7263b2fa114dbfb20bd">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-e8461d2b8d2b8cd5df0ffc83d9a49cb4e91cb325.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d93480da1d303122ee67dc3bc23e6297bdef9951">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-1405526837302b10e93925f80f62d5b8e913aedc.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9cf8c0ef60847621c7ad00b4f78dbfc9daba4af2">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-7bc5d44677d251570c5dde706f76288caa5a5bab.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="82054090e487d78e163a988557db62d809fa9b95">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-31ddd9f73ee2e463c5b7a13dc4ad17c993a6ff13.jar" />
     </item>
     <item
         jar="C:\Users\shrey\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
@@ -16,11 +65,81 @@
         <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-5fd43b7144bc5a094de3c4c2872ad91814bf2c3a.jar" />
     </item>
     <item
-        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\classes.jar"
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.1.0\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-9bf25e91267a306f525ab303431d91d2489dfb4b.jar" />
+        sha1="482de223655d06253cc6a4955d653f8994169500">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-d47cce2f8a78e7cb4e7d899b0a3c5755583f5dc2.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-850e2c14554589af61a898c88bc03d14b7f1a8bd.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\libs\pollfish.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f20efa54c0a74af7a51ad9aa366ffaca00c20c14">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\pollfish-012655662d5e94845fed1e42b1a166e1c6933c05.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-20a676685151e591227e8821ab86e92280057d44.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-d31d13828a5a560e36c214794f9c2976d7997591.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="95758a2905669affbffc5ddd262921d375674fad">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-888b0acf67db25868eb4cd66b87ec15ec2b53bd2.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="97f3b099801a9ad9d70e835b9125273e986eb68d">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-e29980995740f659671d3962b146d84c20c8bc54.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2a7e47da654546f9457deb6132364f1bf33a1857">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-ceb027e5f26d7b8fdf5191ecf6ac70a731eed1a6.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\libs\aerserv-sdk-min.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4b15dd0c8d1105a4d58d6b9f9ddd1bf9d5e72183">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\aerserv-sdk-min-ee45a06e6c3e04eb47d20ac0c113113e51bbff7e.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-f702e24c97828af1df831092df2bf744e2b9a74a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3178362320bcf51228835b60ff978efadfd1f783">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-e3fc6732e6e49b3ed8eb2f8c56b69178cd558742.jar" />
     </item>
     <item
         jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\libs\internal_impl-23.1.0.jar"
@@ -30,11 +149,95 @@
         <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-6e5966cab2b2ecf5adff09b487a82b765061d834.jar" />
     </item>
     <item
-        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\classes.jar"
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.1.0\classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-850e2c14554589af61a898c88bc03d14b7f1a8bd.jar" />
+        sha1="dcb5b75baf05d92e61d5706737200ee55949f97b">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-17b2865430f64162b2542e0eb7b2257f8f853527.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-9bf25e91267a306f525ab303431d91d2489dfb4b.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="997773777cf3904c11d6764fe3b7668538220e49">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-74db4d5af7f13ad1828fc04c722e5115237356b9.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\libs\appsaholic-sdk-v3.0.2-android.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2b75b78c24fa8539ca1c7a37f9be3b43cd0cb08e">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\appsaholic-sdk-v3.0.2-android-4f8af3b7a4cee230412f8613987fe454b19b7cba.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\libs\AudienceNetwork.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="82470b0e601b9e656e2362f1af0d79bacfcf8b3a">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\AudienceNetwork-4c7f829214b91ac62fb8d16ed13fc58424e0c0b9.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3b05c18f60969ecc2ba49c0409c4b96be2d9cb0c">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-2f1725aef98d360f05fa99290170378243bf6ae8.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-cacc25a68549bdf31fcd29d6060c7e9491c31571.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3c729e6d76a36c5dc27e6a4c4009296f49eaa88a">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-7a81384acb191c56dbc4aba745f2f8551edaf8e3.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b92002cb2f0e11a226ac5bac6dff1dc2a9d0b774">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-a1acfbf195ca9d8b9ac021ddb652ac942faf6d7f.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-499a21f8e0a6bac5a9b5f19be3492d84ffb25c20.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d61920aba361832a9545a43fa8c9453eb02f18f7">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-d5bdac61887bd839a72f35eea4119594c39769ba.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3aed37c38c56679602255dd72ef356da5d327cda">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-4cb1d7db17de98e1a966f164f2faece1ddc99381.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="325788a04b436a0bccbc5b4c54cf0f12ebdcbd2d">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-fbbc3a40442688f889a9316925e3e066b0e77ceb.jar" />
     </item>
 
 </items>

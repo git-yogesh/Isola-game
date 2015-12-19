@@ -25,6 +25,7 @@
         android:layout_gravity="left|start"
         android:choiceMode="singleChoice"
         android:divider="@null"
+        android:background="@color/navbackground_color"
         android:scrollbars="vertical"/>
 
 </android.support.v4.widget.DrawerLayout>

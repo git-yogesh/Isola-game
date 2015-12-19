@@ -13,6 +13,7 @@
         <!-- item>Upload</item -->
         <item>Game Menu</item>
         <item>Exit</item>
+        <!--item>perk</item-->
         <!--item>Logout</item-->
     </string-array>
 
