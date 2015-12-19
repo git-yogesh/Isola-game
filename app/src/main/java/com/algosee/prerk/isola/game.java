@@ -113,9 +113,9 @@ public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemCl
         switch (position) {
             case 0:
                 Toast.makeText(getApplicationContext(), "Logout1", Toast.LENGTH_SHORT).show();
-                //fragment = new FilterFragment();
-                //ft.replace(R.id.content_frame, fragment);
-                //ft.commit();
+                fragment = new GameFragment();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
                 break;
 
             case 1:

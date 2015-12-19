@@ -10,7 +10,7 @@
 
     <string-array name="options_array">
         <item>Home</item>
-        <!--item>Upload</item-->
+        <!-- item>Upload</item -->
         <item>My Account</item>
         <item>My Orders</item>
         <item>Logout</item>
@@ -20,5 +20,6 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_addmoney">addmoney</string>
     <string name="title_activity_cardsdisplay">cardsdisplay</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
