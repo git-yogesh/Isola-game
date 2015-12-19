@@ -9,11 +9,11 @@
     <string name="hello_world">Hello world!</string>
 
     <string-array name="options_array">
-        <item>Home</item>
+        <item>Game</item>
         <!-- item>Upload</item -->
-        <item>My Account</item>
-        <item>My Orders</item>
-        <item>Logout</item>
+        <item>New Game</item>
+        <item>Exit</item>
+        <!--item>Logout</item-->
     </string-array>
 
     <string name="drawer_open">Open navigation drawer</string>
