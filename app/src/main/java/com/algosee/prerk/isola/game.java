@@ -1,5 +1,6 @@
 package com.algosee.prerk.isola;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,7 +14,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 
 public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemClickListener{
@@ -112,70 +112,31 @@ public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemCl
 
         switch (position) {
             case 0:
-                Toast.makeText(getApplicationContext(), "Logout1", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "Logout1", Toast.LENGTH_SHORT).show();
                 fragment = new GameFragment();
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
                 break;
 
             case 1:
-                Toast.makeText(getApplicationContext(), "Logout2", Toast.LENGTH_SHORT).show();
-                /*if(Splash.SUPER_FLAG == 0) {
-                    fragment = new myAccount();
-                    ft.replace(R.id.content_frame, fragment);
-                    ft.commit();
-                }
-                else{
-                    fragment = new Upload();
-                    ft.replace(R.id.content_frame, fragment);
-                    ft.commit();
-                }*/
+                Intent mainmenu = new Intent(getApplicationContext(),Welcome.class);
+                startActivity(mainmenu);
+                finish();
                 break;
 
             case 2:
-                Toast.makeText(getApplicationContext(), "Logout3", Toast.LENGTH_SHORT).show();
-                /*if(Splash.SUPER_FLAG == 0) {
-                    fragment = new my_copies();
-                    ft.replace(R.id.content_frame, fragment);
-                    ft.commit();
-                }
-                else
-                {
-                    fragment = new credit();
-                    ft.replace(R.id.content_frame, fragment);
-                    ft.commit();
-                }*/
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
                 break;
 
             case 3:
-                Toast.makeText(getApplicationContext(), "Logout4", Toast.LENGTH_SHORT).show();
-                /*if(Splash.SUPER_FLAG == 0) {
-                    Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
-                    SharedPreferences credentialsSharedPref = getSharedPreferences(Login.PREFS_NAME, MODE_PRIVATE);
-                    SharedPreferences.Editor credentialsEditor = credentialsSharedPref.edit();
-                    credentialsEditor.clear();
-                    credentialsEditor.commit();
-                    Intent i = new Intent(this, Login.class);
-                    startActivity(i);
-                    finish();
-                }
-                else
-                {
-                    fragment = new pending_copies();
-                    ft.replace(R.id.content_frame, fragment);
-                    ft.commit();
-                }*/
+                //Toast.makeText(getApplicationContext(), "Logout4", Toast.LENGTH_SHORT).show();
+
                 break;
 
             case 4:
-                Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_SHORT).show();
-                /*SharedPreferences credentialsSharedPref = getSharedPreferences(Login.PREFS_NAME, MODE_PRIVATE);
-                SharedPreferences.Editor credentialsEditor = credentialsSharedPref.edit();
-                credentialsEditor.clear();
-                credentialsEditor.commit();
-                Intent i = new Intent(this, Login.class);
-                startActivity(i);
-                finish();*/
+                //Toast.makeText(getApplicationContext(), "Logout", Toast.LENGTH_SHORT).show();
+
                 break;
         }
 

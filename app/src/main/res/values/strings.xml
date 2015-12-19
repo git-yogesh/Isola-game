@@ -9,9 +9,9 @@
     <string name="hello_world">Hello world!</string>
 
     <string-array name="options_array">
-        <item>Game</item>
-        <!-- item>Upload</item -->
         <item>New Game</item>
+        <!-- item>Upload</item -->
+        <item>Game Menu</item>
         <item>Exit</item>
         <!--item>Logout</item-->
     </string-array>
