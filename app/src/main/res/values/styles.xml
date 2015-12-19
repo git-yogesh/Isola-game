@@ -12,4 +12,7 @@
     <color name="text_color_1">#FF3D00</color>
     <color name="button_color_1">#FF3D00</color>
 
+    <dimen name="d1">4dp</dimen>
+    <dimen name="d2">2dp</dimen>
+
 </resources>

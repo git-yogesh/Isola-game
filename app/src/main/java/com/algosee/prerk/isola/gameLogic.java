@@ -23,10 +23,10 @@ public class gameLogic {
         }
         curPlayer = 1;
 
-        p1PosX = 0;
+        p1PosX = 6;
         p1PosY = 3;
 
-        p2PosX = 6;
+        p2PosX = 0;
         p2PosY = 3;
 
         grid[p1PosX][p1PosY] = 1;
@@ -82,6 +82,7 @@ public class gameLogic {
         return true;
     }
 
+
     public boolean isBlockValid(){
 
         int x = newBlockX;
@@ -101,25 +102,7 @@ public class gameLogic {
     }
 
 
-
-
-    public int[][] getGrid() {
-        return grid;
-    }
-
-
-
-    public void resetGrid(){
-        int i,j;
-        for(i=0;i<SIZE;i++){
-            for(j=0;j<SIZE;j++){
-                grid[i][j] =0;
-            }
-        }
-    }
-
-
-    public void updateGrid(){
+    public void updateGridMove(){
 
 
         int p = curPlayer;
@@ -134,8 +117,11 @@ public class gameLogic {
             grid[p2PosX][p2PosY] = 0;
             p2PosX = newMoveX;
             p2PosY = newMoveY;
-            grid[p1PosX][p1PosY] = 2;
+            grid[p2PosX][p2PosY] = 2;
         }
+    }
+
+    public void updateGridBlock(){
 
         grid[newBlockX][newBlockY] = -1;
     }
@@ -160,40 +146,40 @@ public class gameLogic {
 
     }
 
-    public int game(int a,int b,int c,int d){
+    public int gameMove(int a,int b){
 
         newMoveX = a;
         newMoveY = b;
-        newBlockX = c;
-        newBlockY = d;
 
         if(!isMoveValid()){
             statusCode = -1;
         }
-        else if(!isBlockValid()){
-            statusCode = -2;
-        }
         else{
-            updateGrid();
-            if(isWinner()){
-                statusCode = getCurPlayer();
-            }
-            else{
-                togglePlayer();
-                statusCode = 0;
-            }
+            updateGridMove();
+            statusCode = 0;
         }
-        int i,j;
-        for(i=0;i<SIZE;i++){
-            for(j=0;j<SIZE;j++){
-                System.out.println(grid[i][j]+" ");
-            }
-            System.out.println("\n");
-        }
-
         return statusCode;
     }
 
+    public int gameBlock(int a, int b){
+
+        newBlockX = a;
+        newBlockY = b;
+
+        if(!isBlockValid()){
+            statusCode = -2;
+        }
+
+        else{
+            updateGridBlock();
+            if(isWinner()){
+                statusCode = getCurPlayer();
+            }
+            togglePlayer();
+            statusCode = 0;
+        }
+        return statusCode;
+    }
 
 
 }

@@ -19,7 +19,8 @@ public class GameFragment extends Fragment {
     int newx,newy,blockx,blocky;
     String id;
     ImageView IM[] = new ImageView[49];
-
+    int move_block = 0;
+    View rootView;
 
     public GameFragment() {
         // Required empty public constructor
@@ -30,51 +31,11 @@ public class GameFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View rootView = inflater.inflate(R.layout.fragment_game, container, false);
+        rootView = inflater.inflate(R.layout.fragment_game, container, false);
         game1 = new gameLogic();
-
-        /*Button mButton = (Button) rootView.findViewById(R.id.b1);
-        mButton.setTag("sdj");
-        LinearLayout l = (LinearLayout) rootView.findViewById(R.id.test);
-        mButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getContext(), v.getTag().toString(), Toast.LENGTH_SHORT).show();
-
-                int a1, a2, a3, a4;
-                EditText e1, e2, e3, e4;
-                e1 = (EditText) rootView.findViewById(R.id.newx);
-                e2 = (EditText) rootView.findViewById(R.id.newy);
-                e3 = (EditText) rootView.findViewById(R.id.blockx);
-                e4 = (EditText) rootView.findViewById(R.id.blocky);
-
-                a1 = Integer.parseInt(e1.getText().toString());
-                a2 = Integer.parseInt(e2.getText().toString());
-                a3 = Integer.parseInt(e3.getText().toString());
-                a4 = Integer.parseInt(e4.getText().toString());
-
-                //Toast.makeText(getContext(),a1+" " +a2+" "+a3 + " " + a4,Toast.LENGTH_SHORT).show();
-                game1.init();
-                int f = game1.game(a1, a2, a3, a4);
-                Toast.makeText(getContext(), f + " ", Toast.LENGTH_SHORT).show();
+        game1.init();
 
 
-                TextView t1, t2, t3, t4, t5;
-                t1 = (TextView) rootView.findViewById(R.id.p1x);
-                t2 = (TextView) rootView.findViewById(R.id.p1y);
-                t3 = (TextView) rootView.findViewById(R.id.p2x);
-                t4 = (TextView) rootView.findViewById(R.id.p2y);
-                t5 = (TextView) rootView.findViewById(R.id.gf);
-
-                t1.setText(game1.p1PosX + "");
-                t2.setText(game1.p1PosY + "");
-                t3.setText(game1.p2PosX + "");
-                t4.setText(game1.p2PosY + "");
-                t5.setText(f + "");
-
-
-            }
-        });*/
 
         IM[0] = (ImageView) rootView.findViewById(R.id.r0c0);
         IM[1] = (ImageView) rootView.findViewById(R.id.r0c1);
@@ -103,12 +64,31 @@ public class GameFragment extends Fragment {
         IM[24] = (ImageView) rootView.findViewById(R.id.r3c3);
         IM[25] = (ImageView) rootView.findViewById(R.id.r3c4);
         IM[26] = (ImageView) rootView.findViewById(R.id.r3c5);
-        IM[21] = (ImageView) rootView.findViewById(R.id.r3c6);
+        IM[27] = (ImageView) rootView.findViewById(R.id.r3c6);
+        IM[28] = (ImageView) rootView.findViewById(R.id.r4c0);
+        IM[29] = (ImageView) rootView.findViewById(R.id.r4c1);
+        IM[30] = (ImageView) rootView.findViewById(R.id.r4c2);
+        IM[31] = (ImageView) rootView.findViewById(R.id.r4c3);
+        IM[32] = (ImageView) rootView.findViewById(R.id.r4c4);
+        IM[33] = (ImageView) rootView.findViewById(R.id.r4c5);
+        IM[34] = (ImageView) rootView.findViewById(R.id.r4c6);
+        IM[35] = (ImageView) rootView.findViewById(R.id.r5c0);
+        IM[36] = (ImageView) rootView.findViewById(R.id.r5c1);
+        IM[37] = (ImageView) rootView.findViewById(R.id.r5c2);
+        IM[38] = (ImageView) rootView.findViewById(R.id.r5c3);
+        IM[39] = (ImageView) rootView.findViewById(R.id.r5c4);
+        IM[40] = (ImageView) rootView.findViewById(R.id.r5c5);
+        IM[41] = (ImageView) rootView.findViewById(R.id.r5c6);
+        IM[42] = (ImageView) rootView.findViewById(R.id.r6c0);
+        IM[43] = (ImageView) rootView.findViewById(R.id.r6c1);
+        IM[44] = (ImageView) rootView.findViewById(R.id.r6c2);
+        IM[45] = (ImageView) rootView.findViewById(R.id.r6c3);
+        IM[46] = (ImageView) rootView.findViewById(R.id.r6c4);
+        IM[47] = (ImageView) rootView.findViewById(R.id.r6c5);
+        IM[48] = (ImageView) rootView.findViewById(R.id.r6c6);
 
 
-
-
-        for(int j = 0;j<4;j++) {
+        for(int j = 0;j<49;j++) {
             final int i = j;
             IM[j].setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -116,6 +96,7 @@ public class GameFragment extends Fragment {
                     newx = i / 7;
                     newy = i % 7;
                     Toast.makeText(getContext(), newx + " " + newy, Toast.LENGTH_SHORT).show();
+                    play();
                 }
             });
         }
@@ -126,8 +107,58 @@ public class GameFragment extends Fragment {
         return rootView;
     }
 
-    public void play(View view){
-        Toast.makeText(getContext(),id,Toast.LENGTH_SHORT).show();
+    public void play(){
+        //Toast.makeText(getContext(),"play",Toast.LENGTH_SHORT).show();
+        if(move_block == 0){
+            int check_flag = game1.gameMove(newx,newy);
+            if( check_flag == -1) {
+                Toast.makeText(getContext(),"Invalid move",Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else{
+                display();
+                if( check_flag == 1){
+                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                }
+                else if(check_flag == 2){
+                    Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
+                }
+                move_block = 1;
+
+            }
+        }else if( move_block == 1){
+            int check_flag = game1.gameBlock(newx, newy);
+            if( check_flag == -2) {
+                Toast.makeText(getContext(),"Invalid Block",Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else{
+                display();
+                if( check_flag == 1){
+                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                }
+                else if(check_flag == 2){
+                    Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
+                }
+                move_block = 1;
+
+            }
+        }
+    }
+
+    public void display(){
+        Toast.makeText(getContext(),"display",Toast.LENGTH_SHORT).show();
+        int Id[] = {R.id.r0c0,R.id.r0c1,R.id.r0c2,};
+        for(int i =0;i<7;i++)
+            for(int j =0;j<7;j++)
+            {
+                if(game1.grid[i][j] == 1){
+                    int idpos= i * 7 + j;
+                    
+                }
+            }
+        IM[0].setImageResource(R.drawable.isola1);
+        IM[1].setImageResource(R.drawable.isola2);
     }
 
 
