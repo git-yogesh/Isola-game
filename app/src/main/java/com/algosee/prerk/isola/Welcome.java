@@ -6,7 +6,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 
 public class Welcome extends ActionBarActivity {
@@ -21,8 +20,18 @@ public class Welcome extends ActionBarActivity {
         Intent startgame = new Intent(getApplicationContext(),game.class);
         startActivity(startgame);
         finish();
-        Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
     }
+
+    public void exit(View view){
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        //Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
+    }
+
+
 
 
     @Override

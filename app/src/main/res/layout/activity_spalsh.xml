@@ -7,7 +7,7 @@
     android:background="@color/background_color">
 
     <TextView
-        android:text="Isola"
+        android:text="@string/GameName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="80sp"

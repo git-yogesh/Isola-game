@@ -10,5 +10,6 @@
 
     <color name="background_color">#000000</color>
     <color name="text_color_1">#FF3D00</color>
+    <color name="button_color_1">#FF3D00</color>
 
 </resources>
