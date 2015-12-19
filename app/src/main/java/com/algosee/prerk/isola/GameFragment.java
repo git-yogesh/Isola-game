@@ -87,7 +87,7 @@ public class GameFragment extends Fragment {
         IM[47] = (ImageView) rootView.findViewById(R.id.r6c5);
         IM[48] = (ImageView) rootView.findViewById(R.id.r6c6);
 
-
+        display();
         for(int j = 0;j<49;j++) {
             final int i = j;
             IM[j].setOnClickListener(new View.OnClickListener() {
@@ -95,7 +95,7 @@ public class GameFragment extends Fragment {
                 public void onClick(View v) {
                     newx = i / 7;
                     newy = i % 7;
-                    Toast.makeText(getContext(), newx + " " + newy, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(), newx + " " + newy, Toast.LENGTH_SHORT).show();
                     play();
                 }
             });
@@ -140,25 +140,35 @@ public class GameFragment extends Fragment {
                 else if(check_flag == 2){
                     Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
                 }
-                move_block = 1;
+                move_block = 0;
 
             }
         }
     }
 
     public void display(){
-        Toast.makeText(getContext(),"display",Toast.LENGTH_SHORT).show();
-        int Id[] = {R.id.r0c0,R.id.r0c1,R.id.r0c2,};
+        //Toast.makeText(getContext(),"display",Toast.LENGTH_SHORT).show();
+        //int Id[] = {R.id.r0c0,R.id.r0c1,R.id.r0c2,};
         for(int i =0;i<7;i++)
             for(int j =0;j<7;j++)
             {
+                int idpos= i * 7 + j;
                 if(game1.grid[i][j] == 1){
-                    int idpos= i * 7 + j;
-                    
+                    IM[idpos].setImageResource(R.drawable.isola1);
+                }
+                else if(game1.grid[i][j] == 2){
+                    IM[idpos].setImageResource(R.drawable.isola2);
+                }
+                else if(game1.grid[i][j] == -1){
+                    IM[idpos].setBackgroundColor(getResources().getColor(R.color.grid_background_blocked));
+                }
+                else if(game1.grid[i][j] == 0){
+                    IM[idpos].setBackgroundColor(getResources().getColor(R.color.grid_background_white));
+                    IM[idpos].setImageDrawable(null);
                 }
             }
-        IM[0].setImageResource(R.drawable.isola1);
-        IM[1].setImageResource(R.drawable.isola2);
+        //IM[0].setImageResource(R.drawable.isola1);
+        //IM[1].setImageResource(R.drawable.isola2);
     }
 
 

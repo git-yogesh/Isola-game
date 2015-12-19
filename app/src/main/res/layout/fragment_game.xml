@@ -1,9 +1,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.algosee.prerk.isola.GameFragment">
+    android:layout_height="match_parent" tools:context="com.algosee.prerk.isola.GameFragment"
+    android:background="@color/background_color">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -13,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Game Arena"
+            android:text="Isola"
+            android:textColor="@color/text_color_1"
             android:textSize="36dp" />
 
         <LinearLayout
@@ -26,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c0"
@@ -37,7 +40,7 @@
                     android:layout_marginRight="@dimen/d2"
                     android:layout_marginTop="@dimen/d1"
                     android:layout_weight="1"
-                    android:background="#FFFFFF"
+                    android:background="@color/grid_background_white"
                     android:gravity="center" />
             </LinearLayout>
 
@@ -45,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c1"
@@ -64,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c2"
@@ -83,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c3"
@@ -102,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c4"
@@ -121,7 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c5"
@@ -140,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r0c6"
@@ -165,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c0"
@@ -184,7 +187,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c1"
@@ -203,7 +206,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c2"
@@ -222,7 +225,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c3"
@@ -241,7 +244,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c4"
@@ -260,7 +263,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c5"
@@ -279,7 +282,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r1c6"
@@ -304,7 +307,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c0"
@@ -323,7 +326,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c1"
@@ -342,7 +345,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c2"
@@ -361,7 +364,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c3"
@@ -380,7 +383,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c4"
@@ -399,7 +402,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c5"
@@ -418,7 +421,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r2c6"
@@ -443,7 +446,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c0"
@@ -462,7 +465,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c1"
@@ -481,7 +484,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c2"
@@ -500,7 +503,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c3"
@@ -519,7 +522,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c4"
@@ -538,7 +541,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c5"
@@ -557,7 +560,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r3c6"
@@ -582,7 +585,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c0"
@@ -601,7 +604,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c1"
@@ -620,7 +623,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c2"
@@ -639,7 +642,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c3"
@@ -658,7 +661,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c4"
@@ -677,7 +680,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c5"
@@ -696,7 +699,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r4c6"
@@ -721,7 +724,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c0"
@@ -740,7 +743,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c1"
@@ -759,7 +762,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c2"
@@ -778,7 +781,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c3"
@@ -797,7 +800,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c4"
@@ -816,7 +819,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c5"
@@ -835,7 +838,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r5c6"
@@ -860,7 +863,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c0"
@@ -879,7 +882,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c1"
@@ -898,7 +901,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c2"
@@ -917,7 +920,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c3"
@@ -936,7 +939,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c4"
@@ -955,7 +958,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c5"
@@ -974,7 +977,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000">
+                android:background="@color/grid_border_color">
 
                 <ImageView
                     android:id="@+id/r6c6"

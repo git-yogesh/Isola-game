@@ -14,7 +14,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 
 public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemClickListener{
@@ -176,7 +175,7 @@ public class game extends ActionBarActivity implements NavDrawerAdapter.OnItemCl
     public void onBackPressed()
     {
         // code here to show dialog
-        Toast.makeText(getApplicationContext(),"back pressed",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),"back pressed",Toast.LENGTH_SHORT).show();
         Intent mainmenu = new Intent(getApplicationContext(),Welcome.class);
         startActivity(mainmenu);
         finish();
