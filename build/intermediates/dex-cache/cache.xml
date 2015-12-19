@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-cacc25a68549bdf31fcd29d6060c7e9491c31571.jar" />
+    </item>
+    <item
+        jar="C:\Users\shrey\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-5fd43b7144bc5a094de3c4c2872ad91814bf2c3a.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\libs\internal_impl-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-6e5966cab2b2ecf5adff09b487a82b765061d834.jar" />
+    </item>
+    <item
+        jar="D:\Android\Isola\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="D:\Android\Isola\app\build\intermediates\pre-dexed\debug\classes-9bf25e91267a306f525ab303431d91d2489dfb4b.jar" />
+    </item>
+
+</items>

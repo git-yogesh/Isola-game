@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.algosee.prerk.isola" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Spalsh"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Welcome"
+            android:label="@string/title_activity_welcome"
+            android:parentActivityName=".Spalsh" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.algosee.prerk.isola.Spalsh" />
+        </activity>
+        <activity
+            android:name=".game"
+            android:label="@string/title_activity_game"
+            android:parentActivityName=".Welcome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.algosee.prerk.isola.Welcome" />
+        </activity>
+    </application>
+
+</manifest>
