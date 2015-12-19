@@ -12,7 +12,7 @@
     <color name="text_color_1">#FF3D00</color>
     <color name="button_color_1">#FF3D00</color>
     <color name="grid_background_white">#ffffff</color>
-    <color name="grid_background_blocked">#2196F3</color>
+    <color name="grid_background_blocked">#FF3D00</color>
     <color name="grid_border_color">#FF3D00</color>
     <color name="navbackground_color">#CCFF3D00</color>
 

@@ -2,6 +2,7 @@ package com.algosee.prerk.isola;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -171,6 +173,10 @@ public class GameFragment extends Fragment {
         };*/
         //PerkManager.startSession(getContext(), key, localPerkListener);
         //PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", true, null);
+        int turn = game1.getCurPlayer();
+        TextView player_turn = (TextView) rootView.findViewById(R.id.player_turn);
+        player_turn.setText("Player "+ turn +"'s Turn");
+
         for(int i =0;i<7;i++)
             for(int j =0;j<7;j++)
             {
@@ -229,6 +235,17 @@ public class GameFragment extends Fragment {
             }
         });
 
+        Button b1 = (Button) layout.findViewById(R.id.mm1);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup.dismiss();
+                Intent mainmenu = new Intent(getContext(),Welcome.class);
+                startActivity(mainmenu);
+                getActivity().finish();
+            }
+        });
+
     }
 
     public void call_popup_p2()
@@ -265,6 +282,17 @@ public class GameFragment extends Fragment {
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
                 popup.dismiss();
+            }
+        });
+
+        Button b1 = (Button) layout.findViewById(R.id.mm2);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup.dismiss();
+                Intent mainmenu = new Intent(getContext(),Welcome.class);
+                startActivity(mainmenu);
+                getActivity().finish();
             }
         });
 

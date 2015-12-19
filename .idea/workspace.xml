@@ -28,23 +28,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82e1f515-7e44-4320-93c9-fe52d0c1b9a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/AudienceNetwork.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SinglePlayerLogic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/aerserv_sdk_min.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appsaholic_sdk_v3_0_2_android.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pwin_pop.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/Welcome.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/Welcome.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/game.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Isola.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,72 +61,28 @@
       <file leaf-file-name="SingleGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3417">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="5185">
+              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#5180#5387#0" expanded="true" />
+                <element signature="e#5376#5377#0" expanded="true" />
+                <element signature="e#9815#10256#0" expanded="true" />
+                <element signature="e#10245#10246#0" expanded="true" />
+                <element signature="e#10348#10652#0" expanded="true" />
+                <element signature="e#10641#10642#0" expanded="true" />
+                <element signature="e#11712#12153#0" expanded="true" />
+                <element signature="e#12142#12143#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_single_game.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_single_game.xml">
+      <file leaf-file-name="pwin_pop.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pwin_pop.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.148148" vertical-offset="0" max-vertical-offset="238">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="p1win_pop.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0" vertical-offset="406" max-vertical-offset="833">
-              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_welcome.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4074073" vertical-offset="1003" max-vertical-offset="1564">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_game.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5953757" vertical-offset="8056" max-vertical-offset="17085">
-              <caret line="486" column="27" selection-start-line="486" selection-start-column="27" selection-end-line="486" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_game.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.148148" vertical-offset="283" max-vertical-offset="629">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state vertical-scroll-proportion="-3.148148" vertical-offset="391" max-vertical-offset="935">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -147,11 +94,70 @@
       <file leaf-file-name="GameFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2432" max-vertical-offset="4607">
-              <caret line="160" column="5" selection-start-line="116" selection-start-column="4" selection-end-line="160" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4340" max-vertical-offset="5083">
+              <caret line="291" column="32" selection-start-line="291" selection-start-column="32" selection-end-line="291" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#10030#10334#0" expanded="true" />
+                <element signature="e#10323#10324#0" expanded="true" />
+                <element signature="e#12010#12314#0" expanded="true" />
+                <element signature="e#12303#12304#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="p1win_pop.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.296296" vertical-offset="51" max-vertical-offset="918">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_welcome.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.52089137" vertical-offset="340" max-vertical-offset="1819">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding>
+                <element signature="e#233#268#0" expanded="true" />
+                <element signature="e#294#329#0" expanded="true" />
+                <element signature="e#353#386#0" expanded="true" />
+                <element signature="e#413#446#0" expanded="true" />
+                <element signature="e#661#679#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="p2win_pop.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6666665" vertical-offset="0" max-vertical-offset="901">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1943" max-vertical-offset="3281">
+              <caret line="139" column="25" selection-start-line="137" selection-start-column="16" selection-end-line="139" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -852,24 +858,25 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/drawer_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/NavDrawerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_spalsh.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/gameLogic.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/lose.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/win.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_single_game.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SinglePlayerLogic.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/game.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/Welcome.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pwin_pop.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" />
       </list>
     </option>
   </component>
@@ -1074,6 +1081,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1091,6 +1102,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Isola" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1361,7 +1386,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1378,7 +1403,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29471892" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29471892" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24432677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1506,6 +1531,10 @@
           <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#10030#10334#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#12010#12314#0" expanded="true" />
+            <element signature="e#12303#12304#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1615,14 +1644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/gameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2491" max-vertical-offset="3723">
@@ -1652,17 +1673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.074074" vertical-offset="66" max-vertical-offset="816">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2825485" vertical-offset="136" max-vertical-offset="578">
@@ -1689,34 +1699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53351206" vertical-offset="1688" max-vertical-offset="3281">
-          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2432" max-vertical-offset="4607">
-          <caret line="160" column="5" selection-start-line="116" selection-start-column="4" selection-end-line="160" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="3417">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_single_game.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.148148" vertical-offset="0" max-vertical-offset="238">
@@ -1728,10 +1710,299 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1364902" vertical-offset="0" max-vertical-offset="17289">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding>
+            <element signature="e#1656#1667#0" expanded="false" />
+            <element signature="e#1714#1725#0" expanded="false" />
+            <element signature="e#1773#1784#0" expanded="false" />
+            <element signature="e#1830#1841#0" expanded="false" />
+            <element signature="e#2503#2514#0" expanded="false" />
+            <element signature="e#2561#2572#0" expanded="false" />
+            <element signature="e#2620#2631#0" expanded="false" />
+            <element signature="e#2677#2688#0" expanded="false" />
+            <element signature="e#3329#3340#0" expanded="false" />
+            <element signature="e#3387#3398#0" expanded="false" />
+            <element signature="e#3446#3457#0" expanded="false" />
+            <element signature="e#3503#3514#0" expanded="false" />
+            <element signature="e#4155#4166#0" expanded="false" />
+            <element signature="e#4213#4224#0" expanded="false" />
+            <element signature="e#4272#4283#0" expanded="false" />
+            <element signature="e#4329#4340#0" expanded="false" />
+            <element signature="e#4981#4992#0" expanded="false" />
+            <element signature="e#5039#5050#0" expanded="false" />
+            <element signature="e#5098#5109#0" expanded="false" />
+            <element signature="e#5155#5166#0" expanded="false" />
+            <element signature="e#5807#5818#0" expanded="false" />
+            <element signature="e#5865#5876#0" expanded="false" />
+            <element signature="e#5924#5935#0" expanded="false" />
+            <element signature="e#5981#5992#0" expanded="false" />
+            <element signature="e#6633#6644#0" expanded="false" />
+            <element signature="e#6691#6702#0" expanded="false" />
+            <element signature="e#6750#6761#0" expanded="false" />
+            <element signature="e#6807#6818#0" expanded="false" />
+            <element signature="e#7642#7653#0" expanded="false" />
+            <element signature="e#7700#7711#0" expanded="false" />
+            <element signature="e#7759#7770#0" expanded="false" />
+            <element signature="e#7816#7827#0" expanded="false" />
+            <element signature="e#8468#8479#0" expanded="false" />
+            <element signature="e#8526#8537#0" expanded="false" />
+            <element signature="e#8585#8596#0" expanded="false" />
+            <element signature="e#8642#8653#0" expanded="false" />
+            <element signature="e#9294#9305#0" expanded="false" />
+            <element signature="e#9352#9363#0" expanded="false" />
+            <element signature="e#9411#9422#0" expanded="false" />
+            <element signature="e#9468#9479#0" expanded="false" />
+            <element signature="e#10120#10131#0" expanded="false" />
+            <element signature="e#10178#10189#0" expanded="false" />
+            <element signature="e#10237#10248#0" expanded="false" />
+            <element signature="e#10294#10305#0" expanded="false" />
+            <element signature="e#10946#10957#0" expanded="false" />
+            <element signature="e#11004#11015#0" expanded="false" />
+            <element signature="e#11063#11074#0" expanded="false" />
+            <element signature="e#11120#11131#0" expanded="false" />
+            <element signature="e#11772#11783#0" expanded="false" />
+            <element signature="e#11830#11841#0" expanded="false" />
+            <element signature="e#11889#11900#0" expanded="false" />
+            <element signature="e#11946#11957#0" expanded="false" />
+            <element signature="e#12598#12609#0" expanded="false" />
+            <element signature="e#12656#12667#0" expanded="false" />
+            <element signature="e#12715#12726#0" expanded="false" />
+            <element signature="e#12772#12783#0" expanded="false" />
+            <element signature="e#13607#13618#0" expanded="false" />
+            <element signature="e#13665#13676#0" expanded="false" />
+            <element signature="e#13724#13735#0" expanded="false" />
+            <element signature="e#13781#13792#0" expanded="false" />
+            <element signature="e#14433#14444#0" expanded="false" />
+            <element signature="e#14491#14502#0" expanded="false" />
+            <element signature="e#14550#14561#0" expanded="false" />
+            <element signature="e#14607#14618#0" expanded="false" />
+            <element signature="e#15259#15270#0" expanded="false" />
+            <element signature="e#15317#15328#0" expanded="false" />
+            <element signature="e#15376#15387#0" expanded="false" />
+            <element signature="e#15433#15444#0" expanded="false" />
+            <element signature="e#16085#16096#0" expanded="false" />
+            <element signature="e#16143#16154#0" expanded="false" />
+            <element signature="e#16202#16213#0" expanded="false" />
+            <element signature="e#16259#16270#0" expanded="false" />
+            <element signature="e#16911#16922#0" expanded="false" />
+            <element signature="e#16969#16980#0" expanded="false" />
+            <element signature="e#17028#17039#0" expanded="false" />
+            <element signature="e#17085#17096#0" expanded="false" />
+            <element signature="e#17737#17748#0" expanded="false" />
+            <element signature="e#17795#17806#0" expanded="false" />
+            <element signature="e#17854#17865#0" expanded="false" />
+            <element signature="e#17911#17922#0" expanded="false" />
+            <element signature="e#18563#18574#0" expanded="false" />
+            <element signature="e#18621#18632#0" expanded="false" />
+            <element signature="e#18680#18691#0" expanded="false" />
+            <element signature="e#18737#18748#0" expanded="false" />
+            <element signature="e#19572#19583#0" expanded="false" />
+            <element signature="e#19630#19641#0" expanded="false" />
+            <element signature="e#19689#19700#0" expanded="false" />
+            <element signature="e#19746#19757#0" expanded="false" />
+            <element signature="e#20398#20409#0" expanded="false" />
+            <element signature="e#20456#20467#0" expanded="false" />
+            <element signature="e#20515#20526#0" expanded="false" />
+            <element signature="e#20572#20583#0" expanded="false" />
+            <element signature="e#21224#21235#0" expanded="false" />
+            <element signature="e#21282#21293#0" expanded="false" />
+            <element signature="e#21341#21352#0" expanded="false" />
+            <element signature="e#21398#21409#0" expanded="false" />
+            <element signature="e#22050#22061#0" expanded="false" />
+            <element signature="e#22108#22119#0" expanded="false" />
+            <element signature="e#22167#22178#0" expanded="false" />
+            <element signature="e#22224#22235#0" expanded="false" />
+            <element signature="e#22876#22887#0" expanded="false" />
+            <element signature="e#22934#22945#0" expanded="false" />
+            <element signature="e#22993#23004#0" expanded="false" />
+            <element signature="e#23050#23061#0" expanded="false" />
+            <element signature="e#23702#23713#0" expanded="false" />
+            <element signature="e#23760#23771#0" expanded="false" />
+            <element signature="e#23819#23830#0" expanded="false" />
+            <element signature="e#23876#23887#0" expanded="false" />
+            <element signature="e#24528#24539#0" expanded="false" />
+            <element signature="e#24586#24597#0" expanded="false" />
+            <element signature="e#24645#24656#0" expanded="false" />
+            <element signature="e#24702#24713#0" expanded="false" />
+            <element signature="e#25537#25548#0" expanded="false" />
+            <element signature="e#25595#25606#0" expanded="false" />
+            <element signature="e#25654#25665#0" expanded="false" />
+            <element signature="e#25711#25722#0" expanded="false" />
+            <element signature="e#26363#26374#0" expanded="false" />
+            <element signature="e#26421#26432#0" expanded="false" />
+            <element signature="e#26480#26491#0" expanded="false" />
+            <element signature="e#26537#26548#0" expanded="false" />
+            <element signature="e#27189#27200#0" expanded="false" />
+            <element signature="e#27247#27258#0" expanded="false" />
+            <element signature="e#27306#27317#0" expanded="false" />
+            <element signature="e#27363#27374#0" expanded="false" />
+            <element signature="e#28015#28026#0" expanded="false" />
+            <element signature="e#28073#28084#0" expanded="false" />
+            <element signature="e#28132#28143#0" expanded="false" />
+            <element signature="e#28189#28200#0" expanded="false" />
+            <element signature="e#28841#28852#0" expanded="false" />
+            <element signature="e#28899#28910#0" expanded="false" />
+            <element signature="e#28958#28969#0" expanded="false" />
+            <element signature="e#29015#29026#0" expanded="false" />
+            <element signature="e#29667#29678#0" expanded="false" />
+            <element signature="e#29725#29736#0" expanded="false" />
+            <element signature="e#29784#29795#0" expanded="false" />
+            <element signature="e#29841#29852#0" expanded="false" />
+            <element signature="e#30493#30504#0" expanded="false" />
+            <element signature="e#30551#30562#0" expanded="false" />
+            <element signature="e#30610#30621#0" expanded="false" />
+            <element signature="e#30667#30678#0" expanded="false" />
+            <element signature="e#31502#31513#0" expanded="false" />
+            <element signature="e#31560#31571#0" expanded="false" />
+            <element signature="e#31619#31630#0" expanded="false" />
+            <element signature="e#31676#31687#0" expanded="false" />
+            <element signature="e#32328#32339#0" expanded="false" />
+            <element signature="e#32386#32397#0" expanded="false" />
+            <element signature="e#32445#32456#0" expanded="false" />
+            <element signature="e#32502#32513#0" expanded="false" />
+            <element signature="e#33154#33165#0" expanded="false" />
+            <element signature="e#33212#33223#0" expanded="false" />
+            <element signature="e#33271#33282#0" expanded="false" />
+            <element signature="e#33328#33339#0" expanded="false" />
+            <element signature="e#33980#33991#0" expanded="false" />
+            <element signature="e#34038#34049#0" expanded="false" />
+            <element signature="e#34097#34108#0" expanded="false" />
+            <element signature="e#34154#34165#0" expanded="false" />
+            <element signature="e#34806#34817#0" expanded="false" />
+            <element signature="e#34864#34875#0" expanded="false" />
+            <element signature="e#34923#34934#0" expanded="false" />
+            <element signature="e#34980#34991#0" expanded="false" />
+            <element signature="e#35632#35643#0" expanded="false" />
+            <element signature="e#35690#35701#0" expanded="false" />
+            <element signature="e#35749#35760#0" expanded="false" />
+            <element signature="e#35806#35817#0" expanded="false" />
+            <element signature="e#36458#36469#0" expanded="false" />
+            <element signature="e#36516#36527#0" expanded="false" />
+            <element signature="e#36575#36586#0" expanded="false" />
+            <element signature="e#36632#36643#0" expanded="false" />
+            <element signature="e#37467#37478#0" expanded="false" />
+            <element signature="e#37525#37536#0" expanded="false" />
+            <element signature="e#37584#37595#0" expanded="false" />
+            <element signature="e#37641#37652#0" expanded="false" />
+            <element signature="e#38293#38304#0" expanded="false" />
+            <element signature="e#38351#38362#0" expanded="false" />
+            <element signature="e#38410#38421#0" expanded="false" />
+            <element signature="e#38467#38478#0" expanded="false" />
+            <element signature="e#39119#39130#0" expanded="false" />
+            <element signature="e#39177#39188#0" expanded="false" />
+            <element signature="e#39236#39247#0" expanded="false" />
+            <element signature="e#39293#39304#0" expanded="false" />
+            <element signature="e#39945#39956#0" expanded="false" />
+            <element signature="e#40003#40014#0" expanded="false" />
+            <element signature="e#40062#40073#0" expanded="false" />
+            <element signature="e#40119#40130#0" expanded="false" />
+            <element signature="e#40771#40782#0" expanded="false" />
+            <element signature="e#40829#40840#0" expanded="false" />
+            <element signature="e#40888#40899#0" expanded="false" />
+            <element signature="e#40945#40956#0" expanded="false" />
+            <element signature="e#41597#41608#0" expanded="false" />
+            <element signature="e#41655#41666#0" expanded="false" />
+            <element signature="e#41714#41725#0" expanded="false" />
+            <element signature="e#41771#41782#0" expanded="false" />
+            <element signature="e#42423#42434#0" expanded="false" />
+            <element signature="e#42481#42492#0" expanded="false" />
+            <element signature="e#42540#42551#0" expanded="false" />
+            <element signature="e#42597#42608#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5738162" vertical-offset="270" max-vertical-offset="629">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1943" max-vertical-offset="3281">
+          <caret line="139" column="25" selection-start-line="137" selection-start-column="16" selection-end-line="139" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/SingleGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="464" max-vertical-offset="5185">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5180#5387#0" expanded="true" />
+            <element signature="e#5376#5377#0" expanded="true" />
+            <element signature="e#9815#10256#0" expanded="true" />
+            <element signature="e#10245#10246#0" expanded="true" />
+            <element signature="e#10348#10652#0" expanded="true" />
+            <element signature="e#10641#10642#0" expanded="true" />
+            <element signature="e#11712#12153#0" expanded="true" />
+            <element signature="e#12142#12143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/algosee/prerk/isola/GameFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4340" max-vertical-offset="5083">
+          <caret line="291" column="32" selection-start-line="291" selection-start-column="32" selection-end-line="291" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10030#10334#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#12010#12314#0" expanded="true" />
+            <element signature="e#12303#12304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/pwin_pop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.148148" vertical-offset="391" max-vertical-offset="935">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/p2win_pop.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6666665" vertical-offset="0" max-vertical-offset="901">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/p1win_pop.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0" vertical-offset="406" max-vertical-offset="833">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state vertical-scroll-proportion="-6.296296" vertical-offset="51" max-vertical-offset="918">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1741,31 +2012,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4074073" vertical-offset="1003" max-vertical-offset="1564">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.148148" vertical-offset="283" max-vertical-offset="629">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_game.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5953757" vertical-offset="8056" max-vertical-offset="17085">
-          <caret line="486" column="27" selection-start-line="486" selection-start-column="27" selection-end-line="486" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="0.52089137" vertical-offset="340" max-vertical-offset="1819">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="e#233#268#0" expanded="true" />
+            <element signature="e#294#329#0" expanded="true" />
+            <element signature="e#353#386#0" expanded="true" />
+            <element signature="e#413#446#0" expanded="true" />
+            <element signature="e#661#679#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">

@@ -11,15 +11,6 @@
     android:background="@color/background_color"
     android:orientation="vertical">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
     <TextView
         android:id="@+id/welcome_string"
         android:text="@string/GameName"
@@ -30,6 +21,16 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_margin="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,6 +57,20 @@
             android:layout_height="wrap_content"
             android:text="Two player"
             android:onClick="start"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/button_color_1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:onClick="help"
             android:layout_gravity="center_horizontal"
             android:background="@color/button_color_1"
             android:layout_marginTop="20dp"

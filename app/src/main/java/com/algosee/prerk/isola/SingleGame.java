@@ -1,13 +1,25 @@
 package com.algosee.prerk.isola;
 
 
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.Toast;
+
+import com.perk.perksdk.PerkListener;
+import com.perk.perksdk.PerkManager;
 
 
 /**
@@ -21,6 +33,8 @@ public class SingleGame extends Fragment {
     String id;
     ImageView IM[] = new ImageView[49];
     int move_block = 0;
+
+    String key = "848bd69a3169a138522c20e22d97c2b6bcbae01a";
 
     public SingleGame() {
         // Required empty public constructor
@@ -106,14 +120,14 @@ public class SingleGame extends Fragment {
     public void display(){
         //Toast.makeText(getContext(),"display",Toast.LENGTH_SHORT).show();
         //int Id[] = {R.id.r0c0,R.id.r0c1,R.id.r0c2,};
-        /*final PerkListener localPerkListener = new PerkListener() {
+        final PerkListener localPerkListener = new PerkListener() {
             @Override
             public void onPerkEvent(String reason) {
                 //Toast.makeText(getContext(), reason +";", Toast.LENGTH_SHORT).show();
             }
-        };*/
-        //PerkManager.startSession(getContext(), key, localPerkListener);
-        //PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", true, null);
+        };
+        PerkManager.startSession(getContext(), key, localPerkListener);
+
         for(int i =0;i<7;i++)
             for(int j =0;j<7;j++)
             {
@@ -140,7 +154,7 @@ public class SingleGame extends Fragment {
     public void play(){
         //Toast.makeText(getContext(),"play",Toast.LENGTH_SHORT).show();
         if(move_block == 0){
-            int check_flag = game1.playerMove(newx,newy);
+            int check_flag = game1.playerMove(newx, newy);
             if( check_flag == -1) {
                 Toast.makeText(rootView.getContext(), "Invalid move", Toast.LENGTH_SHORT).show();
                 return;
@@ -149,13 +163,14 @@ public class SingleGame extends Fragment {
                 display();
                 if( check_flag == 1){
                     Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
-                    //PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", false, null);
-                    //call_popup_p1();
+                    PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", false, null);
+                    call_popup_p();
+
                 }
                 else if(check_flag == 2){
                     Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
                     //PerkManager.trackEvent(getContext(), key,"c7c5751718d58d2455313eb7719de5ad54236529", false, null);
-                    //call_popup_p2();
+                    call_popup_c();
                 }
                 move_block = 1;
 
@@ -184,15 +199,104 @@ public class SingleGame extends Fragment {
                 display();
                 if( check_flag == 1){
                     Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
-                    //call_popup_p1();
+                    call_popup_p();
                 }
                 else if(check_flag == 2){
                     Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
-                    //call_popup_p2();
+                    call_popup_c();
                 }
 
             }
         }
+    }
+
+    public void call_popup_p()
+    {
+        Context context = getContext();
+        LinearLayout viewGroup = (LinearLayout) rootView.findViewById(R.id.pwin);
+        LayoutInflater layoutInflater = (LayoutInflater) context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View layout = layoutInflater.inflate(R.layout.pwin_pop, viewGroup);
+
+        final PopupWindow popup = new PopupWindow(context);
+        popup.setContentView(layout);
+        popup.setWidth(LinearLayout.LayoutParams.FILL_PARENT);
+        popup.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
+        popup.setFocusable(true);
+        //Point p = new Point();
+        //p.x = [0];
+        //p.y = location[1];
+        int OFFSET_X = 50;
+        int OFFSET_Y = 320;
+        popup.setBackgroundDrawable(new BitmapDrawable());
+        //popup.showAsDropDown(layout, 0, 30);
+
+        popup.showAtLocation(layout, Gravity.NO_GRAVITY, OFFSET_X, OFFSET_Y);
+
+        Button b = (Button) layout.findViewById(R.id.closep);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                Fragment fragment = new GameFragment();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+                popup.dismiss();
+            }
+        });
+
+        Button b1 = (Button) layout.findViewById(R.id.mm);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup.dismiss();
+                Intent mainmenu = new Intent(getContext(),Welcome.class);
+                startActivity(mainmenu);
+                getActivity().finish();
+            }
+        });
+
+
+
+    }
+
+    public void call_popup_c()
+    {
+        Context context = getContext();
+        LinearLayout viewGroup = (LinearLayout) rootView.findViewById(R.id.p1win);
+        LayoutInflater layoutInflater = (LayoutInflater) context
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View layout = layoutInflater.inflate(R.layout.p1win_pop, viewGroup);
+
+        final PopupWindow popup = new PopupWindow(context);
+        popup.setContentView(layout);
+        popup.setWidth(LinearLayout.LayoutParams.FILL_PARENT);
+        popup.setHeight(LinearLayout.LayoutParams.WRAP_CONTENT);
+        popup.setFocusable(true);
+        //Point p = new Point();
+        //p.x = [0];
+        //p.y = location[1];
+        int OFFSET_X = 50;
+        int OFFSET_Y = 320;
+        popup.setBackgroundDrawable(new BitmapDrawable());
+        //popup.showAsDropDown(layout, 0, 30);
+
+        popup.showAtLocation(layout, Gravity.NO_GRAVITY, OFFSET_X, OFFSET_Y);
+
+        Button b = (Button) layout.findViewById(R.id.closep1);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+                Fragment fragment = new GameFragment();
+                ft.replace(R.id.content_frame, fragment);
+                ft.commit();
+                popup.dismiss();
+            }
+        });
+
     }
 
 }
