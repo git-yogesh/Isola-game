@@ -162,18 +162,18 @@ public class SingleGame extends Fragment {
             else{
                 display();
                 if( check_flag == 1){
-                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
                     PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", false, null);
                     call_popup_p();
 
                 }
                 else if(check_flag == 2){
-                    Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
                     //PerkManager.trackEvent(getContext(), key,"c7c5751718d58d2455313eb7719de5ad54236529", false, null);
                     call_popup_c();
                 }
                 move_block = 1;
-
+                //Toast.makeText(getContext(),check_flag+"",Toast.LENGTH_SHORT).show();
             }
         }else if( move_block == 1){
             int check_flag = game1.playerBlock(newx, newy);
@@ -185,24 +185,28 @@ public class SingleGame extends Fragment {
                 display();
                 //Toast.makeText(getContext(),check_flag+"",Toast.LENGTH_SHORT).show();
                 if( check_flag == 1){
-                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
-                    //call_popup_p1();
-                }
-                else if(check_flag == 2){
-                    Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
-                    //call_popup_p2();
-                }
-                move_block = 0;
-                game1.compMove();
-                display();
-                int check_flag1 = game1.compBlock();
-                display();
-                if( check_flag == 1){
-                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                    PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", false, null);
                     call_popup_p();
                 }
                 else if(check_flag == 2){
-                    Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
+                    call_popup_c();
+                }
+                move_block = 0;
+                //Toast.makeText(getContext(),check_flag+"",Toast.LENGTH_SHORT).show();
+                game1.compMove();
+                display();
+                int check_flag1 = game1.compBlock();
+                //Toast.makeText(getContext(),check_flag1+"",Toast.LENGTH_SHORT).show();
+                display();
+                if( check_flag1 == 1){
+                    //Toast.makeText(getContext(),"Player won",Toast.LENGTH_SHORT).show();
+                    PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", false, null);
+                    call_popup_p();
+                }
+                else if(check_flag1 == 2){
+                    //Toast.makeText(getContext(),"Computer won",Toast.LENGTH_SHORT).show();
                     call_popup_c();
                 }
 
@@ -246,8 +250,8 @@ public class SingleGame extends Fragment {
             }
         });
 
-        Button b1 = (Button) layout.findViewById(R.id.mm);
-        b.setOnClickListener(new View.OnClickListener() {
+        Button b1 = (Button) layout.findViewById(R.id.mmp);
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 popup.dismiss();
@@ -264,10 +268,10 @@ public class SingleGame extends Fragment {
     public void call_popup_c()
     {
         Context context = getContext();
-        LinearLayout viewGroup = (LinearLayout) rootView.findViewById(R.id.p1win);
+        LinearLayout viewGroup = (LinearLayout) rootView.findViewById(R.id.cwin);
         LayoutInflater layoutInflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View layout = layoutInflater.inflate(R.layout.p1win_pop, viewGroup);
+        View layout = layoutInflater.inflate(R.layout.cwin_pop, viewGroup);
 
         final PopupWindow popup = new PopupWindow(context);
         popup.setContentView(layout);
@@ -284,7 +288,7 @@ public class SingleGame extends Fragment {
 
         popup.showAtLocation(layout, Gravity.NO_GRAVITY, OFFSET_X, OFFSET_Y);
 
-        Button b = (Button) layout.findViewById(R.id.closep1);
+        Button b = (Button) layout.findViewById(R.id.closec);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -294,6 +298,17 @@ public class SingleGame extends Fragment {
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
                 popup.dismiss();
+            }
+        });
+
+        Button b1 = (Button) layout.findViewById(R.id.mmc);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup.dismiss();
+                Intent mainmenu = new Intent(getContext(),Welcome.class);
+                startActivity(mainmenu);
+                getActivity().finish();
             }
         });
 

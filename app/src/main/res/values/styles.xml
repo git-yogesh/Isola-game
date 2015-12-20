@@ -14,7 +14,7 @@
     <color name="grid_background_white">#ffffff</color>
     <color name="grid_background_blocked">#FF3D00</color>
     <color name="grid_border_color">#FF3D00</color>
-    <color name="navbackground_color">#CCFF3D00</color>
+    <color name="navbackground_color">#CC000000</color>
 
     <dimen name="d1">4dp</dimen>
     <dimen name="d2">2dp</dimen>

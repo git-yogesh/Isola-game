@@ -13,8 +13,8 @@
         <!-- item>Upload</item -->
         <item>Game Menu</item>
         <item>Exit</item>
-        <!--item>perk</item-->
-        <!--item>Logout</item-->
+        <!-- item>perk</item -->
+        <!-- item>Logout</item -->
     </string-array>
 
     <string name="drawer_open">Open navigation drawer</string>
@@ -22,7 +22,19 @@
     <string name="title_activity_addmoney">addmoney</string>
     <string name="title_activity_cardsdisplay">cardsdisplay</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="GameName">Isola</string>
+    <string name="title_activity_instructions">Instructions</string>
+
+    <string name="about">Isola is a two-player board game. It is played on
+a 7x7. Players can place their piece on squares only.
+A move consists of two subsequent actions:
+1. Moving one\'s piece to a neighboring (horizontally, vertically, or
+diagonally) position that contains a square but not the opponent\'s
+piece.
+2. Removing any square with no piece on it.
+
+The player who cannot move his/her piece loses the game.
+Play with your friends or with the computer bot. </string>
+
 
 </resources>

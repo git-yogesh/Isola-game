@@ -127,12 +127,12 @@ public class GameFragment extends Fragment {
             else{
                 display();
                 if( check_flag == 1){
-                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
                     //PerkManager.trackEvent(getContext(), key, "c7c5751718d58d2455313eb7719de5ad54236529", false, null);
                     call_popup_p1();
                 }
                 else if(check_flag == 2){
-                    Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
                     //PerkManager.trackEvent(getContext(), key,"c7c5751718d58d2455313eb7719de5ad54236529", false, null);
                     call_popup_p2();
                 }
@@ -149,11 +149,11 @@ public class GameFragment extends Fragment {
                 display();
                 //Toast.makeText(getContext(),check_flag+"",Toast.LENGTH_SHORT).show();
                 if( check_flag == 1){
-                    Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Player 1 won",Toast.LENGTH_SHORT).show();
                     call_popup_p1();
                 }
                 else if(check_flag == 2){
-                    Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),"Player 2 won",Toast.LENGTH_SHORT).show();
                     call_popup_p2();
                 }
                 move_block = 0;
@@ -236,7 +236,7 @@ public class GameFragment extends Fragment {
         });
 
         Button b1 = (Button) layout.findViewById(R.id.mm1);
-        b.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 popup.dismiss();
@@ -286,7 +286,7 @@ public class GameFragment extends Fragment {
         });
 
         Button b1 = (Button) layout.findViewById(R.id.mm2);
-        b.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 popup.dismiss();

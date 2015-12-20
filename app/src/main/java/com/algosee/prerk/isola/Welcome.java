@@ -41,6 +41,12 @@ public class Welcome extends ActionBarActivity {
         //Toast.makeText(getApplicationContext(),"clicked",Toast.LENGTH_SHORT).show();
     }
 
+    public void help(View view)
+    {
+        Intent instructions = new Intent(getApplicationContext(),Instructions.class);
+        startActivity(instructions);
+    }
+
     public void exit(View view){
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
@@ -53,7 +59,7 @@ public class Welcome extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_welcome, menu);
+        //getMenuInflater().inflate(R.menu.menu_welcome, menu);
         return true;
     }
 

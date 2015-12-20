@@ -24,5 +24,5 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:textSize="25sp"
-    android:text="kdkgfkgn"
+    android:textColor="@color/text_color_1"
     android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
