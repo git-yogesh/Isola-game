@@ -48,6 +48,7 @@ public class SingleGame extends Fragment {
         rootView = inflater.inflate(R.layout.fragment_game, container, false);
         game1 = new SinglePlayerLogic();
         game1.init();
+        PerkManager.startSession(getContext(), key);
 
         IM[0] = (ImageView) rootView.findViewById(R.id.r0c0);
         IM[1] = (ImageView) rootView.findViewById(R.id.r0c1);
@@ -126,7 +127,7 @@ public class SingleGame extends Fragment {
                 //Toast.makeText(getContext(), reason +";", Toast.LENGTH_SHORT).show();
             }
         };
-        PerkManager.startSession(getContext(), key, localPerkListener);
+
 
         for(int i =0;i<7;i++)
             for(int j =0;j<7;j++)

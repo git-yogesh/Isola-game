@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Isola</string>
+    <string name="app_name">Quarantine</string>
     <string name="Welcome"> Welcome!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_welcome">Welcome</string>
@@ -22,10 +22,10 @@
     <string name="title_activity_addmoney">addmoney</string>
     <string name="title_activity_cardsdisplay">cardsdisplay</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="GameName">Isola</string>
+    <string name="GameName">Quarantine</string>
     <string name="title_activity_instructions">Instructions</string>
 
-    <string name="about">Isola is a two-player board game. It is played on
+    <string name="about">Quarantine is a two-player board game. It is played on
 a 7x7. Players can place their piece on squares only.
 A move consists of two subsequent actions:
 1. Moving one\'s piece to a neighboring (horizontally, vertically, or
