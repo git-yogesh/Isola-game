@@ -244,7 +244,7 @@ public class SingleGame extends Fragment {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction ft = fragmentManager.beginTransaction();
-                Fragment fragment = new GameFragment();
+                Fragment fragment = new SingleGame();
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
                 popup.dismiss();
@@ -295,7 +295,7 @@ public class SingleGame extends Fragment {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction ft = fragmentManager.beginTransaction();
-                Fragment fragment = new GameFragment();
+                Fragment fragment = new SingleGame();
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
                 popup.dismiss();
