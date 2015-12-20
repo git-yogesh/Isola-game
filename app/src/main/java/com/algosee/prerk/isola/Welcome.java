@@ -13,7 +13,7 @@ public class Welcome extends ActionBarActivity {
 
     public static int PlayerFlag = 0;
 
-    //String key = "848bd69a3169a138522c20e22d97c2b6bcbae01a";
+    String key = "848bd69a3169a138522c20e22d97c2b6bcbae01a";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,11 @@ public class Welcome extends ActionBarActivity {
     {
         Intent instructions = new Intent(getApplicationContext(),Instructions.class);
         startActivity(instructions);
+    }
+    
+    public void portal(View view)
+    {
+        PerkManager.showPortal(Welcome.this, key);
     }
 
     public void exit(View view){
