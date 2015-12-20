@@ -242,12 +242,13 @@ public class SingleGame extends Fragment {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                popup.dismiss();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction ft = fragmentManager.beginTransaction();
                 Fragment fragment = new SingleGame();
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
-                popup.dismiss();
+
             }
         });
 
@@ -293,12 +294,12 @@ public class SingleGame extends Fragment {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                popup.dismiss();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction ft = fragmentManager.beginTransaction();
                 Fragment fragment = new SingleGame();
                 ft.replace(R.id.content_frame, fragment);
                 ft.commit();
-                popup.dismiss();
             }
         });
 
